@@ -3,8 +3,34 @@
 /* Add styling to the title */
 
 /* Custom fonts/cohesive color scheme/custom margins and padding */
+.new-container{
+    flex-direction: column;
+    height: 80%;
+    width: 40%;
+    border: 1px solid black;
+}
 
+.new-content-title{
+    height: 50px;
+    width: 100%;
+    background-color: darkgray;
+    border-bottom: 1px solid black;
+}
 
+.new-content-body{
+    width: 70%;
+    flex-grow: 1;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fancy-title {
+    font-family: cursive;
+    text-decoration: underline;
+}
 
 /* OLD CSS BELOW */
 
