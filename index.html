@@ -1,115 +1,31 @@
 <!doctype html>
-
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
-    <title>DS4200 Web Dev Tutorial</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me | Amirkhan Assetov</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-    <script src="interactivity.js"></script>
-    <div id="header" class="header">
-        <a href="./index.html" class="container clickable" id="account-container">
-            <img src="noun_Hiking_4185384.svg" width="50px">
-            <div id="name-container">Amirkhan Assetov</div>
-        </a>
-        <div class="container" id="title-container">
-            <h2>DS4200 Web Dev Tutorial!</h2>
-        </div>
-        <div class="container" id="pages-container">
-            <a class="pages-btn clickable" href="https://www.google.com">
-                Google
-            </a>
-            <a class="pages-btn clickable" href="https://www.w3schools.com/html/">
-                w3schools
-            </a>
-            <a class="pages-btn clickable" href="./exploration.html">
-                Exploration page
-            </a>
-        </div>
-    </div>
-    <div class="container body-container">
-        <div class="container content-container">
-            <div class="container content-title">
-                <h3>Table content below!</h3>
-            </div>
-            <div class="container content-body">
-                <table id="recordsTable">
-                    <thead>
-                        <tr>
-                            <th>Customer</th>
-                            <th>Purchase Date</th>
-                            <th class="no-right-border">Purchase Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="67576">
-                            <td>Alice</td>
-                            <td>9/5/2026</td>
-                            <td class="no-right-border">$57.00</td>
-                        </tr>
-                        <tr id="18400">
-                            <td>Bob</td>
-                            <td>9/15/2026</td>
-                            <td class="no-right-border">$8.29</td>
-                        </tr>
-                        <tr id="42144">
-                            <td>Charlie</td>
-                            <td>5/30/2026</td>
-                            <td class="no-right-border">$92.10</td>
-                        </tr>
-                        <tr id="48765">
-                            <td>Diana</td>
-                            <td>4/1/2026</td>
-                            <td class="no-right-border">$27.37</td>
-                        </tr>
-                        <tr id="33156">
-                            <td>Edith</td>
-                            <td>10/14/2026</td>
-                            <td class="no-right-border">$58.13</td>
-                        </tr>
-                        <tr id="72226">
-                            <td class="no-bottom-border">Frank</td>
-                            <td class="no-bottom-border">9/29/2025</td>
-                            <td class="no-bottom-border no-right-border">$31.28</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="container content-container">
-            <div class="container content-title">
-                <h3>Control table content below!</h3>
-            </div>
-            <div class="container content-body" style="flex-direction: column;">
-                <p style="margin: 10px; text-align: center; height: 100px;">To manipulate the table on the left, press one of the following buttons. Doing so will oranize the table or highlight//drop an element from the table.</p>
-                <div class="ctrl-btn-container">
-                    <button class="ctrl-btn" onmousedown="sort('Name',true);">Sort by Name!</button>
-                    <button class="ctrl-btn" onmousedown="sort('Date',true);">Sort by Date!</button>
-                    <button class="ctrl-btn" onmousedown="sort('Amount',true);">Sort by Amount!</button> 
-                </div>
-                <div class="ctrl-btn-container">
-                    <button class="ctrl-btn" onmousedown="highlightHighest('Name',true);">Highlight by Earliest Name!</button>
-                    <button class="ctrl-btn" onmousedown="highlightHighest('Date',true);">Highlight by Earliest Date!</button>
-                    <button class="ctrl-btn" onmousedown="highlightHighest('Amount',true);">Highlight by Lowest Amount!</button> 
-                </div>
-                <div class="ctrl-btn-container">
-                    <button class="ctrl-btn" onmousedown="dropLowest('Name',true);">Drop by Latest Name!</button>
-                    <button class="ctrl-btn" onmousedown="dropLowest('Date',true);">Drop by Latest Date!</button>
-                    <button class="ctrl-btn" onmousedown="dropLowest('Amount',true);">Drop by Highest Amount!</button> 
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div id="footer" class="footer">
-        <div>
-            Tutorial started on October 29, 2026!
-        </div>
-    </div>
+    <header>
+        <p class="site-name">Amirkhan Assetov</p>
+        <nav aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="exploration.html">Data Exploration</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to My Website</h1>
+        <img class="portrait" src="photo.jpg" alt="Amirkhan Assetov standing on a sunny lawn in front of a campus building.">
+        <h2>About Me</h2>
+        <p>Hi! My name is Amirkhan Assetov, and this is my personal website for DS4200. I am learning how to communicate information through websites and data visualizations. This site brings those ideas together in a small project. The home page introduces me, and the second page shows a simple example of how a chart can help explain data. The photo on this page is a picture of me outdoors on a sunny day.</p>
+        <p>For this assignment, I wanted to keep the website easy to read and easy to use. The navigation at the top connects both pages, so visitors can move between the introduction and the data example. I used basic HTML to organize the headings, paragraphs, images, and links. A separate CSS file controls the colors, spacing, and fonts. Keeping the content and styling in separate files makes the code easier to follow when I return to it later.</p>
+        <p>My work in DS4200 gives me a way to practice turning information into something people can understand visually. A useful chart needs more than bars or colors. It also needs a clear title, labels, and an explanation of what the values represent. On the data exploration page, I use a small sample dataset to demonstrate those choices. You can visit that page to see the visualization, read about the example, and learn how it connects to the website tutorial.</p>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me by <a href="mailto:amirkhanassetov@gmail.com">email</a> or visit my <a href="https://github.com/amigo7182">GitHub profile</a>.</p>
+        </section>
+    </main>
+    <footer>Amirkhan Assetov | DS4200</footer>
 </body>
 </html>
